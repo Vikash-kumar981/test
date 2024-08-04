@@ -1,0 +1,1123 @@
+/*
+Theme Name: Network Child
+Description: A <a href='http://codex.wordpress.org/Child_Themes'>Child Theme</a> for the Network WordPress theme.
+Version: 1.0
+Author: GhostPool
+Author URI: http://www.ghostpool.com
+Text Domain: network
+Template: network
+*/
+
+/* Add your own CSS code here */
+
+
+/*Register page css goes here*/
+/*.form-common{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    column-gap: 10px;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); 
+
+/** {*/
+/*    font-family: 'Montserrat';*/
+ 
+/*}*/
+
+
+.FL-form{
+    display:none;
+}
+
+.artx-THIRD-form{
+    position: relative;
+    MAX-WIDTH: 700PX;
+    left: 65px;
+    HEIGHT: 463PX;
+    TOP: 30PX;
+}
+.form-button{
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+
+/*.form-container{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    margin-left: 50%;*/
+/*}*/
+
+
+.story-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4%;
+    width: 100%;
+}
+.welcome-msg{
+    font-size: 20px;
+    color: green;
+    font-weight: 500;
+    text-align: center;
+    
+}
+#personal-details-container{
+    display: none;
+}
+ #story-title-container{
+     /*display: none;*/
+ }
+
+#select-group-container{
+     display: none;
+}
+.form-details-msg{
+    font-size: 20px;
+    font-weight: 500;
+    color: blue;
+}
+#story_title{
+    width: 100%;
+}
+#artist-recommendation-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     margin-left: 2%;
+    gap: 10px;
+    width: 50%;
+}
+/*#create-story-container{*/
+/*    display:none;*/
+/*}*/
+
+#code-validation-container{
+    /*display:none;*/
+}
+#upload-file-container{
+   display:none;
+}
+
+
+/* Container styling */
+.form-container,.second-form, .third-form{
+    max-width: 486px;
+    padding: 24px;
+    border: 2px solid #EE7D6E;
+    border-radius: 20px;
+    background-color: rgba(212, 212, 212, 0.2);
+    box-shadow: 20px 20px 50px 0px rgba(210, 92, 189, 0.55);
+}
+
+    
+}
+
+.first-form{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+box-shadow: 20px 20px 50px 0px rgba(210, 92, 189, 0.55);
+}
+/* Form styling */
+ 
+ 
+/* Button styling */
+.form-common button {
+    width: 100%;
+     border: none;
+    border-radius: 4px;
+    background-color: #00C87B;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.form-common button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+.form-common input[type="text"],
+.form-common input[type="email"],
+.form-common input[type="number"],
+.form-common input[type="password"], .select_bp_group {
+    font-family: 'Helvetica';
+    width: 215px;
+     box-sizing: border-box;
+     font-size: 14px !important;
+    font-weight: 400;
+    border: 2px solid #D57490;
+    /*border-image-source: linear-gradient(90deg, #EE7D6E 0%, #78226F 100%);*/
+    border-image-slice: 1;
+    border-radius: 20px !important;
+    background-color: transparent;
+    margin-bottom: 24px;
+    height: 56px;
+    color: #ffffff;
+}
+
+.form-common button[type="submit"] {
+    font-family: "Bebas Neue";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 28.48px;
+    padding: 9px 47px;
+    border: none;
+    border-radius: 25px;
+    background-color: #C725D6;
+    color: #ffffff;
+    max-width: 150px;
+    max-height: 48.8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-common button[type="submit"]:hover {
+    background-color: rgba(210, 92, 189, 1);
+}
+
+.form-common {
+    text-align: center;
+}
+
+.form-common h2{
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+}
+.ArtX-heading h1{
+    font-family: 'Montserrat';
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 73.14px;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.ArtX-heading{
+    padding-top: 46px;
+    text-align: center;
+}
+
+.f-form{
+    width:100%;
+    height:100vh;
+    background-image: url("https://artxhub.com/wp-content/themes/network-child/images/artx-page1.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+
+ .form-common input::placeholder {
+            font-family: 'Helvetica';
+            font-weight: 700;
+            font-size: 14px; 
+            color: #ffffff !important; 
+        }
+.form-common input:-moz-placeholder {
+            font-size: 20px;
+            color: #ffffff;
+        }
+.form-common input:-ms-input-placeholder {
+            font-size: 20px;
+            color: #ffffff !important;
+}
+  
+.sd-form{
+    width:100%;
+    height:100vh;
+    background-image: url("https://artxhub.com/wp-content/themes/network-child/images/secondpage.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }  
+ .FR-form{
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+    background-image: url("https://artxhub.com/wp-content/themes/network-child/images/forthpage.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+ 
+.second-form{
+    position: relative;
+    top: 9%;
+    left: 19%;
+}
+
+.TR-form{
+     width:100%;
+    height:100vh;
+    background-image: url("https://artxhub.com/wp-content/themes/network-child/images/thirdpage.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.40);
+}
+.FL-form{
+    width:100%;
+    height:100vh;
+    background-image: url("https://artxhub.com/wp-content/themes/network-child/images/fifthPage.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+.select_bp_group{
+    appearance: none;
+    background-image: url('https://artxhub.com/wp-content/themes/network-child/images/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: 94% center;
+    cursor: pointer;
+
+}
+.select_bp_group option {
+    /*background-color: rgba(212, 212, 212, 0.2);*/
+        background-color: #D4D4D4;
+
+ }  
+ .third-form{
+    position: relative;
+    top: 9%;
+    left: 17%;
+    
+ }
+.gp-toggle-sidebar-small .gp-main-wrapper {
+        width: 100%;
+    }
+    
+    
+    
+
+     /* 4th form upload file*/
+     
+
+.frth-form{
+    max-width: 522px;
+    padding: 24px;
+    border: 2px solid #EE7D6E;
+    border-radius: 20px;
+    background-color: rgba(212, 212, 212, 0.2);
+    box-shadow: 20px 20px 50px 0px rgba(210, 92, 189, 0.55);
+    position: relative;
+    top: 9%;
+    left: 17%;
+
+}
+
+
+.file-upload-wrapper input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-upload-wrapper .upload-image1 {
+    width: 26px;
+    height: 26px;
+
+}
+.file-upload-wrapper .upload-image2 {
+    height: 26px;
+    width: 26px;
+}
+
+.file-upload-wrapper {
+ 
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    top: 24%;
+    left: 53px;
+}
+
+.browser-files{
+  display: flex;
+   padding-left: 185px;
+    padding-top: 24px;
+}
+.browser h3{
+  font-family: 'Bebas Neue';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.48px;
+    text-align: center;
+    color: #fff !important;
+    margin-top: 6px;
+    margin-bottom: 24px;
+}
+.file-upload{
+ 
+    position: relative;
+}
+.profile-upload{
+    position: relative;
+}
+.frth-form h2{
+    text-align:center;
+}
+.textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+textarea{
+    /*border: 2px solid #EE7D6E;*/
+    /*border-radius: 30px !important;*/
+    background-color: rgb(255, 255, 255, 0.05);
+    margin: 0;
+
+}
+#profileDescription {
+    font-size: 14px;
+    color: #C725D6;
+    border: none;
+    background-color: transparent;
+    font-family: Helvetica;
+    font-weight: 700;
+line-height: 16.1px;
+text-align: left;
+
+}
+textarea::placeholder {
+     font-family: Helvetica;
+    font-weight: 700;
+    font-size: 14px;
+     text-align: left;  
+    line-height: 1;
+    color: #C725D6 !important;
+    
+}
+.cntn-txtblock textarea:-moz-placeholder {
+            font-size: 20px;
+            color: #ffffff;
+        }
+.cntn-textblock textarea:-ms-input-placeholder {
+            font-size: 20px;
+            color: #ffffff !important;
+}
+ 
+
+.fourth-form {
+    display:none;.
+}
+
+
+.file-upload-wrapper p{
+    font-family: 'Bebas Neue';
+font-size: 14px;
+font-weight: 400;
+line-height: 16.8px;
+text-align: center;
+color: #F15CFF;
+margin-top: -28px;
+max-width: 190px;
+overflow-wrap: break-word;
+    
+}
+
+                    /*5th form*/
+
+.ffth-form{
+    max-width: 493px;
+    padding: 24px;
+    border: 1px solid #EE7D6E;
+    border-radius: 30px;
+    background-color: rgba(212, 212, 212, 0.05);
+    box-shadow: 20px 20px 50px 0px rgba(200, 77, 182, 0.55);
+
+}
+ .form-row label{
+font-family: 'Montserrat';
+font-size: 30px;
+font-weight: 700;
+line-height: 36.57px;
+text-align: left;
+color:#FFFFFF;
+
+ }
+ 
+ .form-row{
+     text-align:left;
+ }
+
+
+/*======== artx ==========*/
+.ArtX-heading h2{
+    color: #FFF;
+    font-family: "Playfair Display";
+    font-size: 70px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.ArtX-heading h2 span{
+    background: linear-gradient(90deg, #C725D6 40.5%, #D57490 76.5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ArtX-heading p {
+    color: #FFF;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 30px;
+    font-weight: 400;
+    max-width: 731px;
+    line-height: normal;
+    margin: 0 auto;
+    padding-top: 22px;
+}
+
+.ArtX-heading img{
+    padding-top: 23px;
+}
+
+.artx-ffth-form{
+    max-width: 600px;
+    height: 350px;
+     /*background-image: url('https://artxhub.com/wp-content/themes/network-child/images/artx-bg-connect-op.svg');*/
+     position: relative;
+         top: 75px;
+    left: 125px;
+}
+
+.artx-form-common h4{
+    color: #FFF;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 16px;
+    margin: 0;
+}
+
+.artx-form-common{
+    width: 438px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.artx-form-common .form-row input{
+        border: 2px solid #C725D6 !important;
+}
+
+.artx-form-common .form-row #user_email::placeholder,
+.artx-form-common .form-row #invitation_code::placeholder{
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.artx-ffth-form .artx-form-common .form-button{
+        color: #FFF;
+    /*font-family: "Bebas Neue";*/
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+        border-radius: 25px;
+    background: #C725D6;
+    max-width:150px;
+        padding: 10px 0px 8px 0;
+
+}
+
+
+ 
+
+
+ƒ
+/*================2nd form ==========================*/
+
+
+.first-frm .form-row input{
+    width: 438px !important;
+}
+.first-frm input{
+        width: 438px !important;
+
+    
+}
+.artx-SECOND-form .artx-form-common{
+    width: 438px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*.artx-SECOND-form{*/
+/*    position: relative;*/
+/*}*/
+
+.artx-SECOND-form {
+    position: relative;
+    MAX-WIDTH: 700PX;
+    left: 65px;
+    HEIGHT: 530PX;
+}
+.form-column{
+    display: flex;
+    gap: 8px;
+}
+.ArtX-heading svg{
+        margin-top: 21px;
+}
+.ArtX-heading p{
+    padding-top: 10px;
+}
+.artx-SECOND-form svg{
+        fill: rgba(255, 255, 255, 0.05) !important;
+        stroke-width: 1.2px;
+        stroke: #D57490;
+        filter: drop-shadow(12px 12px 60px rgba(158, 64, 144, 0.25));
+        /*margin-left: 16px;*/
+        /*margin-top: -11px;*/
+}
+
+/*3rd form*/
+
+/*.artx-THIRD-form .artx-form-common {*/
+ 
+/*    transform: translate(-168%, -20%);*/
+/*}*/
+.form-column3{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.artx-THIRD-form{
+    /*TEXT-ALIGN: CENTER;*/
+    /*MARGIN-TOP: 51PX;*/
+    /*    padding-left: 100px;*/
+}
+.artx-THIRD-form .artx-form-common h4{
+        font-size: 26px;
+
+}
+.form-column3 {
+    display: flex
+}
+.form-row3 {
+    text-align: left;
+    display: flex;
+    flex: 0 0 50%;
+        margin-bottom: 41px;
+    align-items: baseline;
+
+}
+.form-row3 label{
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.1px;
+    text-align: left;
+    color: #ffffff;
+}
+.artx-THIRD-form .form-column-container{
+        padding-left: 70px;
+           display: flex;
+    flex-direction: column;
+}
+
+
+
+/* custom css*/
+
+.artx-THIRD-form .form-common button[type="submit"] {
+            margin-top: -9px;
+}
+
+.form-row3 {
+    display: flex;
+    align-items: center;
+}
+
+.form-row3 input[type="checkbox"] {
+    position: absolute;
+    opacity: 0; /* Hide the default checkbox */
+    cursor: pointer;
+}
+
+.form-row3 label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 30px; /* Space for the custom checkbox */
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* Custom Checkbox Style */
+.form-row3 label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px; /* Checkbox width */
+    height: 15px; /* Checkbox height */
+    border-radius: 4px; /* Rounded corners */
+    border: 2px solid transparent; /* Transparent border initially */
+    background: linear-gradient(180deg, #C725D6 0%, #D57490 100%); /* Gradient border */
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out; 
+            mask-composite: exclude; /* Clip background */
+    mask: 
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude; 
+}
+
+/* Checkmark Style */
+.form-row3 label::after {
+    content: "✔"; /* Checkmark symbol */
+    position: absolute;
+    color: rgb(0, 0, 0, 0.5);
+     left: 3px;
+    top: 0px;
+    width: 15px;
+    height: 15px;
+    background-color: transparent; /* Transparent background initially */
+    border-radius: 2px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    opacity:0;
+}
+
+/* Checked State */
+.form-row3 input[type="checkbox"]:checked + label::after {
+    opacity: 1;
+}
+
+/* Checked State Background */
+.form-row3 input[type="checkbox"]:checked + label::before {
+    background: linear-gradient(180deg, #D57490 0%, #C725D6 100%);
+    transform: scale(1.1);
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+}
+
+.artx-THIRD-form svg{
+        fill: rgba(255, 255, 255, 0.05) !important;
+        stroke-width: 1.2px;
+        stroke: #D57490;
+        filter: drop-shadow(12px 12px 60px rgba(158, 64, 144, 0.25));
+}
+
+/* forth form*/
+.artx-FOURTH-form svg{
+        stroke: url(#gradientStroke); /* Applies the gradient to the stroke */
+        fill: rgba(255, 255, 255, 0.05) !important;
+        stroke-width: 1.2px;
+        filter: drop-shadow(12px 12px 60px rgba(158, 64, 144, 0.25));
+}
+.profile-svg2 svg{
+        stroke: url(#gradientStroke9); /* Applies the gradient to the stroke */
+        fill: rgba(255, 255, 255, 0.05) !important;
+        stroke-width: 1.2px;
+        filter: drop-shadow(12px 12px 60px rgba(158, 64, 144, 0.25));
+}
+
+.artx-SECOND-form svg{
+    stroke: url(#gradientStroke1); /* Applies the gradient to the stroke */
+        fill: rgba(255, 255, 255, 0.05) !important;
+        stroke-width: 1.2px;
+        filter: drop-shadow(12px 12px 60px rgba(158, 64, 144, 0.25));
+    
+}
+.artx-ffth-form svg{
+       stroke: url(#gradientStroke8); /* Applies the gradient to the stroke */
+        fill: rgba(255, 255, 255, 0.05) !important;
+        stroke-width: 1.2px;
+          filter: drop-shadow(12px 12px 60px rgba(199, 37, 214, 0.25)) !important;
+}
+.textarea-contnt{
+    position: relative;
+    /*text-align: left;*/
+    padding-left: 75px;
+    /*margin-left: -20px;*/
+    margin-top: -35px;
+}
+.story-svg{
+    text-align: left;
+    padding-left: 51px;
+
+}
+.cntn-txtblock{
+    text-align: center;
+    position: absolute;
+    top: 71px;
+    left: 17.5%;
+    max-width: 470px;
+}
+.cntn-txtblock h6{
+    font-family: Helvetica;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 29.9px;
+    text-align: center;
+    color: #fff;
+    margin: 10px 0 0 0;
+}
+
+.FR-form .ArtX-heading {
+    padding-top: 12px;
+}
+
+/*fifth form*/
+.artx-FIFTH-form svg{
+        stroke: url(#gradientStroke2); /* Applies the gradient to the stroke */
+        fill: rgba(255, 255, 255, 0.05) !important;
+        stroke-width: 1.2px;
+        filter: drop-shadow(12px 12px 60px rgba(158, 64, 144, 0.25)) !important;
+}
+
+/*.artx-FIFTH-form .artx-form-common {*/
+/*    transform: translate(-155%, -42%);*/
+/*}*/
+.artx-FIFTH-form .artx-form-common h4 {
+        font-size: 26px;
+
+}
+.story-title {
+     display: flex;
+    flex-direction: column;
+}
+.story-title {
+    max-width: 100%;
+}
+.story-title input{
+    width: 441px !important;
+}
+.story-title textarea{
+        border-radius: 20px !important;
+        height: 129px;
+    background: transparent ;
+
+}
+.story-title input::placeholder{
+    color: #ffffff;
+}
+.story-title input:-moz-placeholder {
+            font-size: 14px;
+            color: #ffffff;
+        }
+.story-title input:-ms-input-placeholder {
+            font-size: 14px;
+            color: #ffffff !important;
+}
+/* Custom styled label as button */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white; /* Text color */
+    background-color: #C725D6; /* Purple button background */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Cursor change to pointer */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    text-transform: uppercase; /* Uppercase text */
+    font-family: "Bebas Neue";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+
+}
+
+/* Hover effect */
+.custom-file-upload:hover {
+    background-color: #E543DA; /* Slightly lighter purple on hover */
+}
+ 
+ .btn-grp {
+         display: flex;
+    justify-content: space-evenly;
+        padding-top: 28px;
+
+ }
+ .btn-grp input{
+     display:none;
+ }
+  
+
+.artx-FIFTH-form{
+        position: relative;
+    MAX-WIDTH: 600PX;
+    left: 65px;
+    HEIGHT: 461PX;
+    TOP: 67PX;
+}
+.story-title textarea::placeholder{
+    color: rgb(255,255,255, 1) !important;
+}
+#storycontent , #storytitle{
+         border: 2px solid #C725D6 !important;
+         color: #ffffff;
+
+}
+
+/* Vendor Prefixes for Compatibility */
+ input::-webkit-input-placeholder, /* Chrome, Safari, Opera */
+ textarea::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+}
+input:-ms-input-placeholder, /* Internet Explorer 10-11 */
+ textarea:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+}
+
+ textarea::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+}
+ input::placeholder,
+ textarea::placeholder {
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+}
+
+@media(max-width: 1680px){
+    /*.artx-SECOND-form .artx-form-common {*/
+    /*        left: 22%;*/
+    /*    top: 46%;*/
+    /*}*/
+/*.artx-THIRD-form .artx-form-common {*/
+/*        transform: translate(-141%, -53%);*/
+/*}*/
+}
+
+
+
+
+@media(max-width:1440px){
+    .second-form {
+    top: 1%;
+    }
+    .frth-form {
+        top: 2%;
+}
+/*.artx-SECOND-form .artx-form-common {*/
+/*   top: 46%;*/
+/*        left: 26%;*/
+   
+/*}*/
+/*.artx-THIRD-form .artx-form-common {*/
+/*    transform: translate(-112%, -53%);*/
+/*}*/
+/*.cntn-txtblock {*/
+/*    left: 20%;*/
+/*}*/
+.browser-files {
+    /*padding-top: 10px;*/
+    padding-top: 44px;
+}
+.textarea-contnt {
+    margin-top: -60px;
+}
+/*.artx-FIFTH-form .artx-form-common {*/
+/*    transform: translate(-131%, -42%);*/
+/*}*/
+}
+ @media (max-width: 1280px){
+/*     .artx-THIRD-form .artx-form-common {*/
+/*        transform: translate(-94%, -55%);*/
+/*}*/
+    .cntn-txtblock {
+        left: 23%;
+    }
+    textarea {
+    height: 143px;
+    }
+    .story-svg svg{
+        height: 400px;
+    }
+/*    .artx-FIFTH-form .artx-form-common {*/
+/*    transform: translate(-115%, -45%);*/
+/*}*/
+    /*.artx-SECOND-form .artx-form-common {*/
+    /*            top: 45%;*/
+    /*    left: 28%;*/
+    /*}*/
+ }
+ 
+ @media (max-width:1024px){
+   
+    .first-form {
+    left: 50%;
+    }
+    .third-form {
+    left: 16%;
+}
+    /*.artx-SECOND-form .artx-form-common {*/
+    /*    left: 32%;*/
+    /*}*/
+    /*.artx-THIRD-form .artx-form-common {*/
+    /*    transform: translate(-64%, 19%);*/
+    /*}*/
+        .cntn-txtblock {
+        left: 29%;
+    }
+/*    .artx-FIFTH-form .artx-form-common {*/
+/*    transform: translate(-90%, -45%);*/
+/*}*/
+
+
+     
+ }
+ @media(max-width:767px){
+  .ArtX-heading p {
+    font-size: 20px;
+    line-height: 25.57px;
+    margin: 20px 0;
+    }
+     
+    .first-form {
+        margin: 0 20px;
+        position: absolute;
+        top: 27%;
+        left: unset; 
+        transform: unset;
+ }
+ .second-form {
+     top: 0%;
+     left: 0%;
+    margin: 0 20px;
+}
+.form-common input[type="text"], 
+.form-common input[type="email"], 
+.form-common input[type="number"], 
+.form-common input[type="password"] {
+        height: unset;
+}
+.form-common button[type="submit"] {
+    font-size: 22px;
+    padding: 10px 18px;
+}
+
+.third-form {
+    margin: 0 20px;
+    left: 0;
+}
+
+.frth-form{
+    left: 0;
+    margin: 0px 18px;
+}
+.browser-files {
+    gap: 40px;
+}
+.file-upload-wrapper {
+    max-width: 98px;
+    max-height: 95px;
+    padding: 15.75px;
+}
+.file-upload-wrapper .upload-image1 {
+    width: 57.44px;
+    height: 60.01px;
+}
+.file-upload-wrapper .upload-image2 {
+    height: 57.44px;
+    width: 60.01px;
+}
+.browser h3 {
+    font-size: 20px;
+    line-height: 28.48px;
+}
+
+/*===================*/
+.ArtX-heading {
+    padding-top: 18px;
+}
+    .ArtX-heading p {
+        margin: 0px 0;
+    }
+    .ArtX-heading svg {
+    margin-top: 9px;
+            width: 316px;
+
+    }
+        .artx-SECOND-form .artx-form-common {
+        display: flex;
+        flex-direction: column;
+        }
+
+ 
+ }
+ 
+ 
+ 
+ 
+ /*Loader css*/
+ 
+
+#page_loader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000050;
+  z-index: 999;
+  pointer-events: none;
+  opacity: 0;
+  /* display: block; */
+}
+#page_loader img {
+  mix-blend-mode: hard-light;
+  max-width: 50px;
+}
+.ajax-loader-brakes {
+  position: relative;
+}
+.ajax-loader-brakes::before {
+  content: "";
+  position: absolute;
+  background: url(../images/ajax-loader.gif) no-repeat center/ 50px, #00000020;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+}
+         
